@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dino Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="game">
+    <div id="score">Score: 0 | High: 0</div>
+
+    <div id="dino"></div>
+    <div id="cactus"></div>
+
+    <div id="gameOver">
+      <p>Game Over</p>
+      <button onclick="restartGame()">Restart</button>
+    </div>
+  </div>
+
+  <!-- AUDIO MUST BE BEFORE script.js -->
+  <audio id="jumpSound" src="jumpsound.mp3" preload="auto"></audio>
+  <audio id="hitSound" src="hitsound.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

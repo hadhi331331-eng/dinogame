@@ -1,0 +1,62 @@
+.game {
+  width: 600px;
+  height: 200px;
+  border: 1px solid black;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* DINO */
+#dino {
+  width: 50px;
+  height: 50px;
+  background-image: url("trex.png");
+  background-size: 50px 50px;
+  position: absolute;
+  left: 50px;
+  top: 150px; /* GROUND LEVEL */
+}
+
+/* REMOVE jump animation completely */
+/* ❌ .jump and @keyframes jump REMOVED */
+
+/* CACTUS */
+#cactus {
+  width: 20px;
+  height: 40px;
+  position: absolute;
+  left: 580px;
+  top: 160px; /* ground (200 - 40) */
+  background-image: url("cactus.png");
+  background-size: 20px 40px;
+}
+
+/* SCORE */
+#score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+/* GAME OVER */
+#gameOver {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 200px;
+  width: 200px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#gameOver button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
